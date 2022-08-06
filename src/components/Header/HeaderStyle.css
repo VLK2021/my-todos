@@ -7,12 +7,13 @@
 }
 
 .Header-text{
-    width: 30rem;
+    width: 20rem;
     padding: 0.5rem;
     color: var(--var-color-logo-btn-bg);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3rem;
+    text-align: center;
 }
 
 .Header-btn{
@@ -29,4 +30,8 @@
 
 .Header-btn:hover {
     opacity: 0.8;
+}
+
+.Header-form{
+
 }

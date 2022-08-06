@@ -1,13 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './HeaderStyle.css';
+import Form from "../Form/Form";
+
 
 const Header = () => {
+    const [formAddVisible, setFormAddVisible] = useState(false);
 
-
-    const addTask = () => {
-
-    }
 
     return (
         <div className={'Header'}>
@@ -15,7 +14,11 @@ const Header = () => {
                 my todos
             </div>
 
-            <button className={'Header-btn'} onClick={addTask}>add task</button>
+            <div className={'Header-form'}>
+                {formAddVisible && <Form/>}
+            </div>
+
+            <button className={'Header-btn'} onClick={() => setFormAddVisible(!formAddVisible)}>add task</button>
         </div>
     );
 };
