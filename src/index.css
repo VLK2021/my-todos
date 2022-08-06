@@ -9,8 +9,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root[
-
-]
+:root{
+  --var-bg-header: lawngreen;
+  --var-bg-outlet: white;
+  --var-bg-footer: green;
+  --var-bg-information: gainsboro;
+  --var-color-logo-btn-bg: cornflowerblue;
+  /*background: gainsboro;*/
+}
 
 

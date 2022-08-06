@@ -1,0 +1,4 @@
+.Footer {
+    background: var(--var-bg-footer);
+    min-height: 3rem;
+}

@@ -1,3 +1,9 @@
-.Layout{
+.Layout {
+    min-height: 100vh;
+}
 
+.outlet {
+    background: var(--var-bg-outlet);
+    width: 100%;
+    min-height: 23rem;
 }

@@ -1,0 +1,32 @@
+.Header {
+    background: var(--var-bg-header);
+    min-height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header-text{
+    width: 30rem;
+    padding: 0.5rem;
+    color: var(--var-color-logo-btn-bg);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.Header-btn{
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--var-color-logo-btn-bg);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.Header-btn:hover {
+    opacity: 0.8;
+}
