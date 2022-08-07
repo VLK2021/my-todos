@@ -5,12 +5,25 @@ import './InformationStyle.css';
 
 
 const Information = () => {
-    const {arrTodos} = useSelector(store => store.todoReducer);
+    const {arrTodos, arrTodosInProgress, arrTodosDone} = useSelector(store => store.todoReducer);
 
     return (
         <div className={'Information'}>
-            <div>my tasks:</div>
-            <div>{arrTodos.length}</div>
+            <div className={'Information-tasks'}>
+                <div>my tasks:</div>
+                <div>{arrTodos.length}</div>
+            </div>
+
+            <div className={'Information-tasksInPr'}>
+                <div>tasks in progress:</div>
+                <div>{arrTodosInProgress.length}</div>
+            </div>
+
+            <div className={'Information-tasksDone'}>
+                <div>tasks is done:</div>
+                <div>{arrTodosDone.length}</div>
+            </div>
+
         </div>
     );
 };

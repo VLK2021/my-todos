@@ -5,5 +5,5 @@
 .outlet {
     background: var(--var-bg-outlet);
     width: 100%;
-    min-height: 23rem;
+    min-height: 25rem;
 }

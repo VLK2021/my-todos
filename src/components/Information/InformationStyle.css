@@ -1,6 +1,12 @@
 .Information {
     background: var(--var-bg-information);
-    min-height: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Information-tasks, .Information-tasksInPr, .Information-tasksDone {
+    min-height: 6rem;
     padding: 0.5rem;
     text-transform: uppercase;
     font-weight: bold;
