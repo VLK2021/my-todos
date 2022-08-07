@@ -3,3 +3,4 @@ export * from './Footer/Footer';
 export * from './Information/Information';
 export * from './Form/Form';
 export * from './Todo/Todo';
+export * from './Todos/Todos';

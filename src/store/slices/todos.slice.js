@@ -3,6 +3,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     arrTodos: [],
+    arrTodosInProgress: [],
 }
 
 const todosSlice = createSlice({
@@ -19,9 +20,19 @@ const todosSlice = createSlice({
             })
         },
 
+        dellTodo: (state, action) => {
+            const index = state.arrTodos.findIndex(todo => todo.id === action.payload.id);
+            state.arrTodos.splice(index, 1);
+        },
+
+        addTodoInProgress: (state, action) => {
+            const todoInPr = state.arrTodos.find(todo => todo.id === action.payload.id);
+            state.arrTodosInProgress.push(todoInPr);
+        },
+
     }
 });
 
 const todoReducer = todosSlice.reducer;
-export const {addTodo} = todosSlice.actions;
+export const {addTodo, dellTodo, addTodoInProgress} = todosSlice.actions;
 export default todoReducer;

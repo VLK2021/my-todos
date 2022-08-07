@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './MainStyle.css';
-import Todos from "../Todos/Todos";
+import Todos from "../../components/Todos/Todos";
+import TodosInProgress from "../../components/TodosInProgress/TodosInProgress";
 
 
 const Main = () => {
@@ -9,17 +10,8 @@ const Main = () => {
     return (
         <div className={'Main'}>
             <Todos/>
-            <div className={'Main-todos'}>
 
-            </div>
-
-            <div className={'Main-inProgress'}>
-
-            </div>
-
-            <div className={'Main-done'}>
-
-            </div>
+            <TodosInProgress/>
         </div>
     );
 };
