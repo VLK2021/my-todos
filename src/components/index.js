@@ -6,3 +6,5 @@ export * from './Todo/Todo';
 export * from './Todos/Todos';
 export * from './TodoInProgress/TodoInProgress';
 export * from './TodosInProgress/TodosInProgress';
+export * from './TodosDone/TodosDone';
+export * from './TodosDone/TodosDone';

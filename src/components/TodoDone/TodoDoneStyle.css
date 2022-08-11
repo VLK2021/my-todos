@@ -1,0 +1,22 @@
+.TodoDone{
+    width: 100%;
+    background: var(--var-bg-outlet);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    box-shadow: 2px 2px var(--var-bg-header);
+}
+
+.TodoDone-text{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
