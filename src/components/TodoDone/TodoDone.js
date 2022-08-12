@@ -6,6 +6,7 @@ const TodoDone = ({todo}) => {
 
     return (
         <div className={'TodoDone'}>
+
             <div className={'TodoDone-text'}>{name}</div>
 
         </div>
