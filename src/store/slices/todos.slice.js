@@ -43,9 +43,13 @@ const todosSlice = createSlice({
             state.arrTodosDone.push(todoDone);
         },
 
+        dellTodoDone: (state, action) => {
+            const index =state.arrTodosDone.findIndex(todo => todo.id === action.payload.id);
+            state.arrTodosDone.splice(index, 1);
+        }
     }
 });
 
 const todoReducer = todosSlice.reducer;
-export const {addTodo, dellTodo, addTodoInProgress, dellTodoInProgress, addTodoDone} = todosSlice.actions;
+export const {addTodo, dellTodo, addTodoInProgress, dellTodoInProgress, addTodoDone, dellTodoDone} = todosSlice.actions;
 export default todoReducer;

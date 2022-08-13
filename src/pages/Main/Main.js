@@ -3,6 +3,7 @@ import React from 'react';
 import './MainStyle.css';
 import Todos from "../../components/Todos/Todos";
 import TodosInProgress from "../../components/TodosInProgress/TodosInProgress";
+import TodosDone from "../../components/TodosDone/TodosDone";
 
 
 const Main = () => {
@@ -12,6 +13,8 @@ const Main = () => {
             <Todos/>
 
             <TodosInProgress/>
+
+            <TodosDone/>
         </div>
     );
 };

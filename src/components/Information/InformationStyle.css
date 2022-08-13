@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .Information-tasks, .Information-tasksInPr, .Information-tasksDone {
