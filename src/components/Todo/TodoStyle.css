@@ -22,12 +22,15 @@
 }
 
 .Todo-block-btn {
+    width: 100%;
     display: flex;
-    margin-top: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
 }
 
 .Todo-btn-del, .Todo-btn-pro{
-    width: 6rem;
+    width: 12rem;
     height: 1.5rem;
     border: none;
     border-radius: 1rem;

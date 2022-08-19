@@ -21,25 +21,17 @@ const todosSlice = createSlice({
             })
         },
 
-
-        dellTodo: (state, action) => {
-            const index = state.arrTodos.findIndex(todo => todo.id === action.payload.id);
-            state.arrTodos.splice(index, 1);
-        },
-
         addTodoInProgress: (state, action) => {
             const todoInPr = state.arrTodos.find(todo => todo.id === action.payload.id);
+            const index = state.arrTodos.findIndex(todo => todo.id === action.payload.id);
+            state.arrTodos.splice(index, 1);
             state.arrTodosInProgress.push(todoInPr);
-        },
-
-
-        dellTodoInProgress: (state, action) => {
-            const index = state.arrTodosInProgress.findIndex(todo => todo.id === action.payload.id);
-            state.arrTodosInProgress.splice(index, 1);
         },
 
         addTodoDone: (state, action) => {
             const todoDone = state.arrTodosInProgress.find(todo => todo.id === action.payload.id);
+            const index = state.arrTodosInProgress.findIndex(todo => todo.id === action.payload.id);
+            state.arrTodosInProgress.splice(index, 1);
             state.arrTodosDone.push(todoDone);
         },
 
@@ -51,5 +43,5 @@ const todosSlice = createSlice({
 });
 
 const todoReducer = todosSlice.reducer;
-export const {addTodo, dellTodo, addTodoInProgress, dellTodoInProgress, addTodoDone, dellTodoDone} = todosSlice.actions;
+export const {addTodo, addTodoInProgress, addTodoDone, dellTodoDone} = todosSlice.actions;
 export default todoReducer;

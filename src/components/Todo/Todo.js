@@ -2,7 +2,7 @@ import React from 'react';
 
 import './TodoStyle.css';
 import {useDispatch} from "react-redux";
-import {addTodoInProgress, dellTodo} from "../../store/slices/todos.slice";
+import {addTodoInProgress} from "../../store/slices/todos.slice";
 
 
 const Todo = ({tod}) => {
@@ -16,7 +16,6 @@ const Todo = ({tod}) => {
 
             <div className={'Todo-block-btn'}>
                 <button className={'Todo-btn-pro'}  onClick={()=>dispatch(addTodoInProgress({id}))}>go pr</button>
-                <button className={'Todo-btn-del'}  onClick={()=>dispatch(dellTodo({id}))}>delete</button>
             </div>
         </div>
     );
