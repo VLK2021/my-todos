@@ -1,20 +1,27 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-:root{
-  --var-bg-header: lawngreen;
-  --var-bg-outlet: white;
-  --var-bg-footer: green;
-  --var-bg-information: gainsboro;
-  --var-color-logo-btn-bg: cornflowerblue;
+:root {
+    --var-bg-header: lawngreen;
+    --var-bg-outlet: white;
+    --var-bg-footer: green;
+    --var-bg-information: gainsboro;
+    --var-color-logo-btn-bg: cornflowerblue;
 }
 
+.lightTherm {
+    --var-bg-header: blue;
+    --var-bg-footer: darkblue;
+    --var-color-logo-btn-bg: fuchsia;
+    --var-bg-outlet: gainsboro;
+    --var-bg-information: white;
+}
 
