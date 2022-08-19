@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.Header-text{
+.Header-text {
     width: 20rem;
     padding: 0.5rem;
     color: var(--var-color-logo-btn-bg);
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.Header-btn{
+.Header-btn {
     width: 12rem;
     height: 3rem;
     border: none;
@@ -32,6 +32,18 @@
     opacity: 0.8;
 }
 
-.Header-form{
+.Header-form {
 
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+.inputStyle {
+    width: 1.2rem;
+    height: 1.2rem;
 }

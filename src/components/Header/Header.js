@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { BsSun, BsMoonFill } from "react-icons/bs";
 
 import './HeaderStyle.css';
 import Form from "../Form/Form";
@@ -18,10 +19,10 @@ const Header = () => {
                 my todos
             </div>
 
-            <div>
-                <input type="checkbox"
-                       onChange={event => onchange(event.target.value)}
-                />
+            <div className={'input'}>
+                <div><BsSun/></div>
+                <div><input  className={'inputStyle'} type="checkbox" onChange={event => onchange(event.target.value)}/></div>
+                <div><BsMoonFill/></div>
             </div>
 
             <div className={'Header-form'}>
