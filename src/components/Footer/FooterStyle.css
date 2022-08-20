@@ -2,3 +2,9 @@
     background: var(--var-bg-footer);
     min-height: 3rem;
 }
+
+.footer-text{
+    font-weight: bold;
+    text-align: center;
+    color: var(--var-color-logo-btn-bg);
+}
