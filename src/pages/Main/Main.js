@@ -6,15 +6,15 @@ import TodosInProgress from "../../components/TodosInProgress/TodosInProgress";
 import TodosDone from "../../components/TodosDone/TodosDone";
 
 
-const Main = () => {
+const Main = ({lan}) => {
 
     return (
         <div className={'Main'}>
-            <Todos/>
+            <Todos lan={lan}/>
 
-            <TodosInProgress/>
+            <TodosInProgress lan={lan}/>
 
-            <TodosDone/>
+            <TodosDone lan={lan}/>
         </div>
     );
 };

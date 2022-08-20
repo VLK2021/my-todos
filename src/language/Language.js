@@ -1,14 +1,20 @@
 import LocalizedStrings from "react-localization";
 
 
-export const language = new LocalizedStrings({
+export const strings = new LocalizedStrings({
+
     en: {
         nameApp: 'my todos',
-        nameBtnHeader: "add task"
+        nameBtnHeader: "add task",
+        myTasks: "my tasks",
+        tasksInProgress: 'tasks in progress',
+
     },
 
-    uk: {
+    ua: {
         nameApp: 'Мої завдання',
-        nameBtnHeader: "додати завдання"
+        nameBtnHeader: "додати завдання",
+        myTasks: "мої таски",
+        tasksInProgress: 'таски в роботі',
     }
 })

@@ -7,10 +7,11 @@ import Footer from "../components/Footer/Footer";
 import Information from "../components/Information/Information";
 
 
-const Layout = () => {
+const Layout = ({lan, setLan}) => {
+
     return (
         <div className={'Layout'}>
-            <Header/>
+            <Header setLan={setLan} lan={lan}/>
 
             <div className={'outlet'}>
                 <Outlet/>

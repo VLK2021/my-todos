@@ -5,13 +5,13 @@ import './TodosStyle.css';
 import Todo from "../Todo/Todo";
 
 
-const Todos = () => {
+const Todos = ({lan}) => {
     const {arrTodos} = useSelector(store => store.todoReducer);
 
     return (
         <div className={'Todos'}>
 
-            <div className={'Todos-text'}>my tasks</div>
+            <div className={'Todos-text'}>{lan.myTasks}</div>
 
             {
                 arrTodos && arrTodos.map(tod => <Todo key={tod.id} tod={tod}/>)

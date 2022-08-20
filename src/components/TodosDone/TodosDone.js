@@ -5,7 +5,7 @@ import './TodosDoneStyle.css';
 import TodoDone from "../TodoDone/TodoDone";
 
 
-const TodosDone = () => {
+const TodosDone = ({lan}) => {
     const {arrTodosDone} = useSelector(store => store.todoReducer);
 
 

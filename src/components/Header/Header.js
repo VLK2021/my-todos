@@ -1,27 +1,34 @@
 import React, {useState} from 'react';
 import {BsSun, BsMoonFill} from "react-icons/bs";
-import {language} from "../../language/Language";
 
 import './HeaderStyle.css';
 import Form from "../Form/Form";
+import {strings} from "../../language/Language";
 
 
-const Header = () => {
+const Header = ({setLan, lan}) => {
     const [formAddVisible, setFormAddVisible] = useState(false);
+
+
 
     const onchange = () => {
         document.body.classList.toggle("lightTherm")
     }
 
     const changeLanguage = (e) => {
-
+        if (e.target.value === 'ua') {
+            setLan(strings._props.ua)
+        }
+        if (e.target.value === 'en') {
+            setLan(strings._props.en)
+        }
     }
-
 
     return (
         <div className={'Header'}>
             <div className={'Header-text'}>
-                my todos
+                {lan.nameApp}
+
             </div>
 
             <div className={'input'}>
@@ -35,12 +42,12 @@ const Header = () => {
                 {formAddVisible && <Form/>}
             </div>
 
-            <select name="lan" className={'select'} onChange={changeLanguage}>
-                <option value="ua">ua</option>
+            <select defaultValue="en" className={'select'} onChange={changeLanguage}>
                 <option value="en">en</option>
+                <option value="ua">ua</option>
             </select>
 
-            <button className={'Header-btn'} onClick={() => setFormAddVisible(!formAddVisible)}>add task</button>
+            <button className={'Header-btn'} onClick={() => setFormAddVisible(!formAddVisible)}>{lan.nameBtnHeader}</button>
         </div>
     );
 };
