@@ -17,7 +17,7 @@ const Layout = ({lan, setLan}) => {
                 <Outlet/>
             </div>
 
-            <Information/>
+            <Information lan={lan}/>
 
             <Footer/>
         </div>

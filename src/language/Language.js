@@ -8,6 +8,8 @@ export const strings = new LocalizedStrings({
         nameBtnHeader: "add task",
         myTasks: "my tasks",
         tasksInProgress: 'tasks in progress',
+        tasksDone: 'tasks done',
+        btnAddTaskName: 'add',
 
     },
 
@@ -16,5 +18,7 @@ export const strings = new LocalizedStrings({
         nameBtnHeader: "додати завдання",
         myTasks: "мої таски",
         tasksInProgress: 'таски в роботі',
+        tasksDone: 'виконана таска',
+        btnAddTaskName: 'додати',
     }
 })

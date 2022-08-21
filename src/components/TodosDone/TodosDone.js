@@ -11,7 +11,7 @@ const TodosDone = ({lan}) => {
 
     return (
         <div className={'TodosDone'}>
-            <div className={'TodosDone-text'}>tasks done</div>
+            <div className={'TodosDone-text'}>{lan.tasksDone}</div>
 
             {
               arrTodosDone && arrTodosDone.map(todo => <TodoDone key={todo.id} todo={todo}/>)

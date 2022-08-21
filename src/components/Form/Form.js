@@ -5,7 +5,7 @@ import './FormStyle.css';
 import {addTodo} from "../../store/slices/todos.slice";
 
 
-const Form = () => {
+const Form = ({lan}) => {
     const dispatch = useDispatch();
 
 
@@ -21,7 +21,7 @@ const Form = () => {
         <div className={'Form'}>
             <form onSubmit={submit}>
                 <input type="text"  name={'todo'} placeholder={'write name task'} className={'Form-input'}/>
-                <button className={'Form-btn'}>add</button>
+                <button className={'Form-btn'}>{lan.btnAddTaskName}</button>
             </form>
         </div>
     );

@@ -4,23 +4,23 @@ import {useSelector} from "react-redux";
 import './InformationStyle.css';
 
 
-const Information = () => {
+const Information = ({lan}) => {
     const {arrTodos, arrTodosInProgress, arrTodosDone} = useSelector(store => store.todoReducer);
 
     return (
         <div className={'Information'}>
             <div className={'Information-tasks'}>
-                <div>my tasks:</div>
+                <div>{lan.myTasks}:</div>
                 <div>{arrTodos.length}</div>
             </div>
 
             <div className={'Information-tasksInPr'}>
-                <div>tasks in progress:</div>
+                <div>{lan.tasksInProgress}:</div>
                 <div>{arrTodosInProgress.length}</div>
             </div>
 
             <div className={'Information-tasksDone'}>
-                <div>tasks is done:</div>
+                <div>{lan.tasksDone}:</div>
                 <div>{arrTodosDone.length}</div>
             </div>
 

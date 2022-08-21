@@ -39,7 +39,7 @@ const Header = ({setLan, lan}) => {
             </div>
 
             <div className={'Header-form'}>
-                {formAddVisible && <Form/>}
+                {formAddVisible && <Form lan={lan}/>}
             </div>
 
             <select defaultValue="en" className={'select'} onChange={changeLanguage}>
