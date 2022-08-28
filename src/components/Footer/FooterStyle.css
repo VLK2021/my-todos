@@ -1,27 +1,27 @@
 .Footer {
     background: var(--var-bg-footer);
     min-height: 3rem;
-
 }
 
-.Footer-logo{
+.Footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0.5rem;
 }
 
-.footer-text, h5{
+.footer-text, h5 {
     font-weight: bold;
     text-align: center;
     color: var(--var-color-logo-btn-bg);
 }
 
-.Footer-logo > img{
+.Footer-logo > img {
     width: 1.3rem;
     margin-right: 0.7rem;
 }
 
-h5{
-    margin: 0;
+h5 {
+    margin: 0 0 0.5rem 0;
 }
 
