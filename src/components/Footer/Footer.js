@@ -9,9 +9,9 @@ const Footer = () => {
         <div className={'Footer'}>
             <div className={'Footer-logo'}>
                 <img src={logo512} alt="logo"/>
-                <div className={'footer-text'}>React Redux 2022</div>
+                <div className={'footer-text'}>React Redux</div>
             </div>
-            <h5>Copyright © 2022 Volodymyr Kostiuk.</h5>
+            <h5>Copyright © Volodymyr Kostiuk.</h5>
         </div>
     );
 };
