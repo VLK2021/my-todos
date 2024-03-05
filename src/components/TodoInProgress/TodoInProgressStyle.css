@@ -1,4 +1,4 @@
-.TodoInProgress{
+.TodoInProgress {
     width: 100%;
     background: var(--var-bg-outlet);
     border-radius: 1rem;
@@ -26,7 +26,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 10rem;
 }
 
 .TodoInProgress-btn-done, .TodoInProgress-btn-del {
@@ -41,6 +40,3 @@
     font-size: 0.7rem;
 }
 
-.TodoInProgress-btn-done {
-    margin-right: 10rem;
-}

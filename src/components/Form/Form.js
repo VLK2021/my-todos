@@ -11,8 +11,13 @@ const Form = ({lan}) => {
 
     const submit = (e) => {
         e.preventDefault();
+
+        if (e.target.todo.value.length > 3 && e.target.todo.value.length < 30) {
         dispatch(addTodo({todo: e.target.todo.value}));
-        console.log(e.target.todo.value);
+        } else {
+            alert('name must have more than 3 characters and name should have less than 30 characters!!!')
+        }
+
         e.target.reset()
     }
 

@@ -26,11 +26,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 10rem;
 }
 
-.Todo-btn-del, .Todo-btn-pro{
-    width: 12rem;
+.Todo-btn-del, .Todo-btn-pro, .Todo-btn-del{
+    width: 50%;
     height: 1.5rem;
     border: none;
     border-radius: 1rem;
@@ -41,6 +40,3 @@
     font-size: 0.7rem;
 }
 
-.Todo-btn-pro {
-    margin-right: 10rem;
-}

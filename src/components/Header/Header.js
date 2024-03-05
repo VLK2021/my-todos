@@ -10,7 +10,6 @@ const Header = ({setLan, lan}) => {
     const [formAddVisible, setFormAddVisible] = useState(false);
 
 
-
     const onchange = () => {
         document.body.classList.toggle("lightTherm")
     }
@@ -28,7 +27,6 @@ const Header = ({setLan, lan}) => {
         <div className={'Header'}>
             <div className={'Header-text'}>
                 {lan.nameApp}
-
             </div>
 
             <div className={'input'}>
@@ -47,7 +45,11 @@ const Header = ({setLan, lan}) => {
                 <option value="ua">ua</option>
             </select>
 
-            <button className={'Header-btn'} onClick={() => setFormAddVisible(!formAddVisible)}>{lan.nameBtnHeader}</button>
+            <button className={'Header-btn'}
+                    onClick={() => setFormAddVisible(!formAddVisible)}
+            >
+                {lan.nameBtnHeader}
+            </button>
         </div>
     );
 };
